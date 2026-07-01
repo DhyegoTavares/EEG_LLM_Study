@@ -1,0 +1,66 @@
+Gravando. Vamos lá. Antes de começar a escrever o código, você decidiu algum tempo para planejar a sua abordagem ou não?
+Sim, no iniciozinho ali. Eu acho que nos primeiros dois minutinhos já tinha planejado, já sabia como resolver.
+Antes de você resolver, você lê?
+Antes de escrever o código, eu li a questão e já mapeei como é que eu ia.
+Pronto, tá certo. Como sua solução se desenvolveu durante a tarefa, desde o momento em que você leu o problema até o momento em que você parou de codar?
+Explica aí mais ou menos.
+Tá. Eu li o problema, modelei na minha cabeça como é que eu ia fazer.
+Quando chegou no código, eu esqueci uma função no Python que é utilizada para inverter o array, a lista.
+Aí eu fui procurar no Stack Overflow. Não tinha essa informação lá diretamente.
+Lendo os comentários, consegui encontrar um lá que trazia um exemplo e consegui resolver.
+Só que aí eu precisava remover esses itens da lista.
+Então, no Stack Overflow, consultei também lá. Também não tinha essa informação qual era o método correto.
+Então, eu abandonei todo o planejamento inicial que eu tinha e fiz de outra forma que eu consegui pensar de cabeça para resolver o problema com a limitação que eu tinha aqui de não saber o método correto.
+É o método do Python. Beleza.
+Sem olhar para o seu código, você consegue reproduzir qualquer parte dele, mesmo que seja uma função ou qualquer condição ou linha, você consegue lembrar dele tranquilamente?
+Sim.
+Consegue, né? Pronto.
+Sem olhar também para o seu código, você descreve para mim a lógica central da sua solução.
+O que ela faz, por que funciona e qual é a ideia principal por trás da abordagem.
+Sem você olhar.
+Tá. Eu tenho uma variável principal que vai ter receber a string.
+Eu tenho uma variável de lista que vai ter as minhas vogais que eu vou eliminar.
+E eu vou ter uma variável de controle que ela vai pegar o mesmo tamanho da string de entrada e vai armazenar esse tamanho.
+Aí eu vou fazer um for, um looping pela minha string, passando letra por letra, de trás para frente.
+E para cada letra que eu vou passando, eu vou eliminando aquela letra, ou eliminando a letra não.
+Eu vou reduzindo no tamanho da quantidade de elementos.
+Clica no quadradinho aqui. Aqui em cima tem um quadradinho. Clica nele.
+Tipo, para disso.
+Eu vou reduzindo na quantidade de elementos que eu tenho até encontrar uma consoante.
+Quando eu encontro a consoante, eu paro de fazer essa dedução de valor.
+E aí eu printo a string do ponto inicial até o ponto que ele parou de contar.
+Entendi.
+Você está satisfeito com a solução que você produziu?
+Acha que foi uma solução radoável?
+É aceitável. Daria para fazer mais simples.
+E eu poderia ter feito muito mais rápido se eu tivesse acesso à documentação com o método correto.
+Entendi. Beleza.
+Eu tinha que inventar moda, né?
+Agora eu só tenho mais três perguntinhas.
+Em que momento durante a tarefa você consultou pela primeira vez um recurso externo?
+E o que você procurava naquele momento?
+Foi quando eu tive que inverter a lista para a minha lógica.
+Foi o primeiro ponto ali que você decidiu fazer uma busca, né?
+Eu não lembrava de cabeça como é que fazia.
+Mas era um método do Python, não era um problema em si de lógica.
+Como os recursos que você consultou influenciaram a direção da sua solução?
+Tipo, facilitou bastante, melhorou?
+Você acha que ia ser inviável chegar na solução sem a consulta?
+Como você acha que influenciou na direção da solução?
+Inviável não seria, porque são coisas simples.
+O que que acontece?
+Como eu trabalho com outras linguagens, eu acabo misturando elas na minha cabeça.
+Então, tem coisas que são muito básicas no Python que eu não lembro de cor.
+E eu geralmente faço consultas relacionadas a isso.
+Eu não uso com tanta frequência.
+Tá, beleza.
+E a última pergunta é, em sua avaliação, qual proporção da solução final reflete seu próprio raciocínio?
+E qual proporção veio do que você encontrou externamente?
+Então, tipo assim, no total, você acha que veio mais da sua cabeça ou mais do que você fez a busca?
+100% de mim. A busca não ajudou quase nada. Atrapalhou mais, né? Porque eu não conseguia encontrar a informação que eu queria.
+Você perdeu tempo fazendo aquela busca, né?
+Perdi muito tempo tentando buscar e a resolução...
+E não conseguiu encontrar. Mas isso você dá por causa da forma que você teve uma consulta.
+Você acredita que se você tivesse ali, por exemplo, no Google?
+Se eu tivesse no Google, se eu tivesse na própria documentação, teria resolvido muito mais rápido.
+Resolvido, né? Tá, pronto. Fechou.

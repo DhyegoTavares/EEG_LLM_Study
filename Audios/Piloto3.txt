@@ -1,0 +1,84 @@
+Pronto, vamos lá. Antes de começar a escrever o código, você dedicou algum tempo para planejar a sua abordagem?
+Se sim, me explica aí como é que você organizou o seu raciocínio.
+Pronto, basicamente o que eu fiz antes de começar o código foi analisar a questão,
+vi que a questão demandava fazer uma análise da string e poder avaliar como ela começa a terminar de maneira consistente.
+Então, basicamente o que eu me planejei foi fazer uma função para checar elemento com elemento com base em uma lista
+e ver se ele autocompletava ou não.
+E fui passando, fiz um parsing de elemento por elemento e fui verificando isso.
+Como sua solução se desenvolveu durante a tarefa? Desde o momento que você leu o problema até o momento que você parou de codar?
+Basicamente, comecei fazendo primeiro a estruturação,
+depois fiz o loop de repetição para verificar elemento por elemento
+e, por último, fiz a função que verificaria elemento e a lista ser comparada.
+Por exemplo, se o elemento for parênteses aberto, eu vou verificar a lista dos elementos fechados
+e verificar qual seria o próximo.
+Se olhar para o seu código, você consegue reproduzir qualquer parte dele, mesmo que seja uma única função?
+Totalmente não.
+Totalmente não.
+Não.
+Tá.
+Sem olhar para o seu código, por favor, você me descreve a lógica central da sua solução,
+o que ela faz, por que funciona e qual é a ideia principal por trás da abordagem.
+Pronto.
+Basicamente, o que a solução propõe, a que foi escrita aqui,
+é basicamente ele vai verificar elemento por elemento,
+vamos supor, ele vai verificar um parênteses aberto,
+ele vai verificar se o próximo elemento fechado é um parênteses ou um colchete.
+Se for colchete, vai retornar falso.
+Se for parênteses, vai retornar verdadeiro.
+Isso se repete para qualquer outro tipo de elemento.
+Certo.
+Você está satisfeito com a solução que você produziu?
+Diria que não.
+Não.
+Ela está bem ineficiente.
+Tá certo.
+Legal.
+Agora mais três perguntinhas que eu tenho para você.
+Você tentou resolver o problema por conta própria antes de usar o Copilot
+ou usou a ferramenta desde o início?
+Tentei usar...
+Qual é a primeira opção?
+Você tentou resolver o problema por conta própria.
+Conta própria, primeiramente.
+Depois, quando eu senti a dificuldade de anonamento,
+eu fui lá e usei o Copilot.
+Exatamente, né?
+Isso.
+Como o Copilot influenciou no rumo da sua solução?
+A sugestão...
+Deixa eu repetir.
+Como o Copilot influenciou o rumo da sua solução?
+A sugestão dele foi incorporada diretamente ou você modificou?
+Se fez mudanças, o que você alterou e por quê?
+Eu fiz a solicitação do Copilot para a estruturação da minha função,
+pedi ajuda como estruturar.
+Recebi o código que ele propôs,
+só que o código que ele propôs não se encaixava no meu problema.
+Então, eu peguei esse código dele e adaptei exatamente para o meu problema.
+Ótimo.
+Na sua avaliação, qual proporção da solução final reflete o seu próprio raciocínio?
+E qual proporção veio da ferramenta?
+Tipo assim, percentual?
+Sim, eu diria que foi 60% do meu raciocínio e 40% do Copilot.
+Show de bola.
+As perguntas são essas?
+Você tem algo a falar sobre o experimento?
+Algum detalhe?
+Alguma coisa que você achou que ficou passando?
+Faltou?
+Algum todo?
+A minha única crítica negativa que eu tenho é em relação à ambientação.
+Mas como você disse que vai ter um notebook novo.
+Mas é isso, esse tipo de circunstâncias que não está rodando,
+deu alguma coisa específica, acaba gerando...
+Quando você fala conforto com a utilização da ideia.
+Isso, com a utilização da ideia.
+Entendi.
+Porque gera um estresse e pode deturpar os dados.
+Tipo, eu estou conseguindo rodar, meu Deus.
+Entendi.
+Ficar preocupado, alguma coisa assim, né?
+Pronto.
+E o resto, eu acho que foi excelentíssimo.
+Massa.
+E o resto, eu acho que foi excelente.

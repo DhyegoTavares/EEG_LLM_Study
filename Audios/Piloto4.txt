@@ -1,0 +1,76 @@
+Falar um pouquinho mais alto para pegar melhor aqui.
+Antes de começar a escrever o código, você dedicou algum tempo para planejar a sua abordagem?
+Se sim, descreva como você organizou seu raciocínio.
+Pode ser bem sincero também, não tem problema.
+Sim, na verdade eu passei o programa para o modelo, o GPT-5.
+Ele entregou a primeira versão do código.
+Eu questionei se fazer pilha seria a melhor abordagem.
+Fala só um pouquinho mais alto, por favor.
+Eu questionei se fazer pilha seria a melhor abordagem.
+Já que o desempenho disso seria...
+Pode ir pedir para ele fazer de forma alterativa.
+Ele faz first in, first out de qualquer jeito, mas...
+Ou first in, last out, mas de forma alterativa.
+Entendi.
+E de fato seria melhor.
+A segunda pergunta é...
+Como sua solução se desenvolveu durante a tarefa?
+Desde o momento que você leu o problema até o momento que você parou de codar.
+Qual foi o fluxo da sua atividade?
+Eu li, eu não entendi o problema, eu passei o problema, eu deleguei meu problema para o modelo.
+O modelo elaborou o problema.
+No caso, melhorou o problema, você não tinha entendido...
+Eu não tinha entendido do jeito que estava.
+Escrito.
+Ele elaborou de uma forma mais descritiva e gerou um código genérico de Python.
+O único trabalho que eu fiz foi meio que de auditoria mesmo.
+Eu perguntei se usar pilha seria a melhor forma ao invés de usar uma reclusão ou coisas desse tipo.
+Beleza.
+Sem olhar para o seu código, você consegue reproduzir qualquer parte dele mesmo que uma única função, condição ou linha?
+Em Python?
+É.
+O seu código que você acabou de fazer.
+Não, né?
+Você está satisfeito com a solução que você produziu?
+Ah, eu estou.
+Não foi eu que produziu, mas eu estou bem satisfeito com ela.
+Ela está funcionando.
+Pronto.
+Agora a gente tem mais três perguntas.
+Você tentou resolver o problema por conta própria antes de ativar o Copilot ou usou a ferramenta desde o início?
+Eu tentei, só que eu não consegui.
+Daí eu usei o Copilot.
+Então, praticamente desde o início.
+É, desde o início então.
+Sim.
+Beleza.
+Como o Copilot influenciou no rumo da sua solução?
+A sugestão dele foi incorporada diretamente ou você modificou ela?
+Se fez mudanças, o que você alterou e por quê?
+Eu alterei um pouco a maneira como ele estava fazendo, como ele estava resolvendo o problema.
+Não alterei diretamente, pedi para que ele interesse.
+Para tentar ganhar um pouco de desempenho e evitar recalcula.
+Beleza.
+A última pergunta.
+Na sua avaliação, qual proporção da solução final reflete seu próprio raciocínio e qual proporção veio da ferramenta?
+Tipo assim, percentual.
+90 a 10.
+90 do modelo, 10 mil.
+10 seu.
+É.
+Show de bola.
+É isso.
+Tem algum comentário para falar?
+Alguma coisa que você acha do experimento melhorar?
+O que você achou ruim?
+Qualquer tipo de comentário.
+Ruim especificamente nada.
+Mas acho que o problema poderia estar formulado melhor.
+Você acha que a escrita do problema está ruim?
+Não, está ruim.
+Está um pouco confusa só.
+Entendi.
+No mais, só isso?
+É só isso.
+Beleza.
+Muito obrigado.
