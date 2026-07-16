@@ -1,0 +1,19 @@
+Entrada
+
+Uma string s contendo apenas os seguintes caracteres: ( ) { } [ ]
+
+O que fazer
+Determine se a string é válida. Uma string é considerada válida quando todas as regras abaixo são cumpridas:
+1. Todo parêntese/colchete/chave aberto deve ser fechado por um do mesmo tipo (ex.: '(' só pode ser fechado por ')').
+2. Os fechamentos devem ocorrer na ordem correta (o último que foi aberto deve ser o primeiro a ser fechado).
+3. Todo caractere de fechamento deve ter um caractere de abertura correspondente antes dele.
+Retorne true se a string for válida, ou false caso contrário.
+
+Exemplo 1: Entrada: s = "()"    	→  Saída: true
+Exemplo 2: Entrada: s = "()[]{}"	→  Saída: true
+Exemplo 3: Entrada: s = "(]"    	→  Saída: false
+Exemplo 4: Entrada: s = "([])"  	→  Saída: true
+Exemplo 5: Entrada: s = "([)]"  	→  Saída: false
+Restrições
+•       1 <= s.length <= 10^4
+•       s consiste apenas nos caracteres: ( ) [ ] { }

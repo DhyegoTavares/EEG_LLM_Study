@@ -4,12 +4,12 @@ Audio transcription script using faster-whisper (large-v3-turbo).
 Optimized for NVIDIA GPUs; falls back to CPU automatically.
 
 Usage:
-    python main.py
-    python main.py audio.mp3
-    python main.py audio.mp3 --language en
-    python main.py audio.mp3 --format srt
-    python main.py Audios/ --batch
-    python main.py audio.mp3 --model large-v3 --cpu
+    python transcription.py
+    python transcription.py audio.mp3
+    python transcription.py audio.mp3 --language en
+    python transcription.py audio.mp3 --format srt
+    python transcription.py Audios/ --batch
+    python transcription.py audio.mp3 --model large-v3 --cpu
 """
 
 import argparse

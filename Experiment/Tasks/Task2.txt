@@ -1,0 +1,18 @@
+Entrada
+Uma string s, composta apenas por letras minúsculas do alfabeto inglês.
+
+O que fazer
+Remova todas as vogais que estiverem no final da string (olhando da direita para a esquerda), parando assim que encontrar a primeira letra que não seja vogal. As vogais são: a, e, i, o, u.
+Retorne a string resultante depois dessa remoção.
+
+Exemplo 1:
+Entrada: s = “idea”
+Saída: "id"
+
+Explicação: "idea" termina em "e" e "a", que são vogais e são removidas. A letra anterior, "d", não é vogal, então a remoção para aí. Resultado: "id".
+
+Exemplo 2:
+Entrada: s = “day”
+Saída: “day”
+
+Explicação: a última letra de "day" é "y", que não é considerada vogal nesta tarefa. Portanto, nada é removido e a string permanece "day".

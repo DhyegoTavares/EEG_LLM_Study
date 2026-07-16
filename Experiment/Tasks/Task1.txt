@@ -1,0 +1,40 @@
+Entrada
+• Um array de strings words, onde cada string é uma palavra composta apenas por letras minúsculas do alfabeto inglês (a-z).
+•  Um array de inteiros weights, com exatamente 26 posições. Cada posição representa o peso de uma letra do alfabeto: weights[0] é o peso da letra 'a', weights[1] é o peso da letra 'b', e assim por diante até weights[25], que é o peso da letra 'z'.
+
+O que fazer
+
+Para cada palavra do array words, siga estes passos:
+
+1. Calcule o peso da palavra: some o peso de cada letra que compõe a palavra (usando o array weights para descobrir o peso de cada letra).
+2. Aplique o módulo 26: pegue o peso total da palavra e calcule o resto da divisão por 26 (peso % 26). O resultado será sempre um número entre 0 e 25.
+3. Converta o número em uma letra: use a tabela abaixo para transformar o número obtido em uma letra do alfabeto. Note que a ordem é invertida (o número 0 corresponde ao 'z', e não ao 'a'):
+
+Numero  |   Letra
+    0  ----------- z
+    1  ----------- y
+    2  ----------- x
+    3  ----------- …
+    25 ----------- a
+(Ou seja: número 0 → 'z', número 1 → 'y', número 2 → 'x', e assim sucessivamente, andando de trás para frente no alfabeto até chegar em 'a' quando o número for 25.)
+
+Resultado final:
+
+Depois de repetir esse processo para todas as palavras, junte (concatene) as letras obtidas, na mesma ordem em que as palavras aparecem no array original. O texto formado é a resposta.
+Exemplo 1:
+Entrada: words = ["abcd","def","xyz"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]
+Saída: "rij"
+
+Explicação:
+•       Palavra "abcd": peso = 5 + 3 + 12 + 14 = 34 → 34 % 26 = 8 → letra 'r'
+•       Palavra "def": peso = 14 + 1 + 2 = 17 → 17 % 26 = 17 → letra 'i'
+•       Palavra "xyz": peso = 7 + 7 + 2 = 16 → 16 % 26 = 16 → letra 'j'
+•       Resultado: "r" + "i" + "j" = "rij"
+
+Exemplo 2
+Entrada: words = ["a","b","c"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+Saída: "yyy"
+
+Explicação:
+•       Cada palavra tem peso 1 → 1 % 26 = 1 → letra 'y'
+•       Resultado: "y" + "y" + "y" = "yyy"

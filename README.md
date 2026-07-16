@@ -1,4 +1,9 @@
-# EEG LLM Study — Audio Transcription
+# EEG LLM Study 
+Experiment Google Sheets: https://docs.google.com/spreadsheets/d/1HTe9ypY4oCW17veFPoG8ExAGW-UyXvtm-LfxjTfTPjs/edit?usp=sharing
+
+Experiment Google Form: https://forms.gle/nGVjgxEaLVqSGaeZ6
+
+## Audio Transcription
 
 Offline audio transcription pipeline for the EEG & LLM study. Uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) with the `large-v3-turbo` model, running on GPU (NVIDIA CUDA) with automatic CPU fallback.
 
@@ -22,7 +27,7 @@ pip install faster-whisper nvidia-cublas-cu12 nvidia-cudnn-cu12
 Place audio files in the `Audios/` folder and run:
 
 ```bash
-python main.py
+python Audios\transcription.py
 ```
 
 This processes every supported file in `Audios/` and saves a `.txt` transcript next to each audio file.
@@ -43,16 +48,16 @@ This processes every supported file in `Audios/` and saves a `.txt` transcript n
 
 ```bash
 # Transcribe a single file
-python main.py Audios/session1.mp4
+python Audios\transcription.py Audios/session1.mp4
 
 # Use English and output subtitles
-python main.py Audios/session1.mp4 --language en --format srt
+python Audios\transcription.py Audios/session1.mp4 --language en --format srt
 
 # Run on CPU only
-python main.py --cpu
+python Audios\transcription.py --cpu
 
 # Use a larger model for higher accuracy
-python main.py --model large-v3
+python Audios\transcription.py --model large-v3
 ```
 
 ## Supported Formats
