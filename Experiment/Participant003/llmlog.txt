@@ -1,0 +1,46 @@
+Usuario:
+chat, faz um programa em python pra mim que, dada a entrada:  
+- um array de strings words, onde cada string é uma palavra composta apenas por letras minusculas do alfabeto em ingles (a-z);  
+- um array de inteiros (weights), com exatamente 26 posições. Cad posição repreenta o peso de uma letra do alfatebo: (eg. weights[0] = a) e assim sussesivamente;  
+
+---  
+calcule:  
+- o peso da palavra: soma do peso de cada letra que a compõe (usando o array de weights);  
+- aplique o modulo 26.. pegue o peso total da palavra e calcule o resto da divisão por 26 (o resultado tem que ser sempre entre 0 e 25);  
+converter o numero em uma letra.. usando a seguinte tabela para transformar o numero obtido em uma letra do akfatebo. (Ps. a ordem é invetida .. o numero 0 corresponde ao Z e o 26 ao a)..
+
+
+GitHub Copilot:
+Segue um programa Python simples que faz o que você pediu. Interpretei "ordem invertida" como: 0 -> 'z', 1 -> 'y', ..., 25 -> 'a' (se você quis outra convenção me avise).
+Código:
+from typing import List, Tuple, Dict
+
+def word_weight_to_letter(words: List[str], weights: List[int]) -> Dict[str, Tuple[int,int,str]]:
+    """
+    Para cada palavra em `words`:
+    - soma os pesos das letras (weights[0] = 'a', ..., weights[25] = 'z')
+    - pega total % 26 (resultado 0..25)
+    - converte para letra invertida: 0 -> 'z', 1 -> 'y', ..., 25 -> 'a'
+    Retorna dicionário: palavra -> (soma_total, resto_mod26, letra_resultado)
+    """
+    if len(weights) != 26:
+        raise ValueError("weights deve ter exatamente 26 elementos (um por letra a..z).")
+    result = {}
+    for w in words:
+        if not all('a' <= ch <= 'z' for ch in w):
+            raise ValueError(f"Palavra inválida (apenas letras minúsculas a-z são permitidas): {w!r}")
+        total = sum(weights[ord(ch) - ord('a')] for ch in w)
+        r = total % 26
+        letter = chr(ord('z') - r)  # 0 -> 'z', 25 -> 'a'
+        result[w] = (total, r, letter)
+    return result
+
+# Exemplo de uso
+if __name__ == "__main__":
+    words = ["abc", "z", "hello"]
+    # exemplo de pesos (a=1, b=2, ..., z=26)
+    weights = list(range(1, 27))
+    out = word_weight_to_letter(words, weights)
+    for word, (total, r, letter) in out.items():
+        print(f"{word}: total={total}, total%26={r}, letra='{letter}'")
+Se você queria a tabela com 0 -> 'Z' maiúsculo, ou 0 -> 'a' (ou 26 -> 'a') informe qual convenção exata e ajusto o código.

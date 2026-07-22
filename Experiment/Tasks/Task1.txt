@@ -34,6 +34,9 @@ Explicação:
 Exemplo 2
 Entrada: words = ["a","b","c"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 Saída: "yyy"
+var1=2
+
+def _main_()
 
 Explicação:
 •       Cada palavra tem peso 1 → 1 % 26 = 1 → letra 'y'
