@@ -1,0 +1,41 @@
+Usuario:
+chat.. um script em python que, receba uma string j.. e verifica se as letras pertecem ao alfbeto inglês. se sim, transforme essa stirng numa string s com a palavra em letras minuculas.. essa string s será a entrada de uma outra função que irá remover todas as vogais desta palavra de trás pra frente.. ou seja.. se j="IDea" , S seria s="idea" .. e a saida do programa seria (id) .. se J for j="Day" .. S seria s="day" e a saida seria (day) ... pois.. a ultima letra é vogal.
+
+Chat:
+
+GitHub Copilot
+
+Segue um script Python curto que faz o que pediu. Pressupostos:
+- "Vogais" = a, e, i, o, u (se quiser incluir 'y', comente e eu ajusto).
+- Se a string tiver caracteres fora do alfabeto inglês (A–Z / a–z), a função levanta ValueError.
+
+Código:
+
+```python
+def is_english_alpha(s: str) -> bool:
+    """Retorna True se todos os caracteres em s forem A-Z ou a-z."""
+    return all(('a' <= ch <= 'z') or ('A' <= ch <= 'Z') for ch in s)
+
+def remove_trailing_vowels(s: str, vowels: str = "aeiou") -> str:
+    """Remove vogais do fim da string s (s deve estar em minúsculas)."""
+    i = len(s)
+    while i > 0 and s[i - 1] in vowels:
+        i -= 1
+    return s[:i]
+
+def process(j: str) -> str:
+    """Valida j, converte para minúsculas e remove vogais do fim.
+       Retorna a string resultante entre parênteses."""
+    if not is_english_alpha(j):
+        raise ValueError("Entrada contém caracteres fora do alfabeto inglês.")
+    s = j.lower()
+    result = remove_trailing_vowels(s)
+    return f"({result})"
+
+# Exemplos
+if __name__ == "__main__":
+    print(process("IDea"))  # saída: (id)
+    print(process("Day"))   # saída: (day)  -> 'y' não é tratado como vogal aqui
+```
+
+Quer que trate 'y' como vogal também? Ou prefira que, em vez de lançar erro para caracteres inválidos, a função simplesmente ignore/filtre não-letras? Qual comportamento prefere?
